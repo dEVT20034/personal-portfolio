@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.6;
+    color: #fdfbfb;
+    background: transparent;
+    overflow-x: hidden;
+}
+
+/* ---- Header ---- */
+header {
+    background: transparent;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.708)
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5733;
+}
+
+/* ---- Particles.js Background ---- */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #00274d; /* Background color for particles */
+}
+
+/* ---- Content Container ---- */
+.content {
+    padding-top: 80px; /* To avoid overlap with fixed header */
+}
+
+/* ---- Hero Section ---- */
+#hero {
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* ---- Social Icons ---- */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    opacity: 0.8;
+}
+
+/* ---- LinkedIn Icon Specific ---- */
+.ri-linkedin-box-fill {
+    color: #0077b5;
+}
+
+.ri-linkedin-box-fill:hover {
+    color: #005582;
+}
+
+/* ---- GitHub Icon Specific ---- */
+.ri-github-fill {
+    color: #fffcfc;
+}
+
+.ri-github-fill:hover {
+    color: #ffffff6e;
+}
+
+/* ---- Section Styling ---- */
+section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ---- Section Titles ---- */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ---- Project Styling ---- */
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ---- Contact Form ---- */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    --width-of-input: 100%;
+    --border-height: 2px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+    margin-bottom: 1rem;
+}
+
+.input {
+    color: #fff;
+    font-size: 1rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8em 1em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input:focus ~ .input-border {
+    width: 100%;
+}
+
+.input:hover {
+    background-color: var(--input-hovered-color);
+}
+
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+textarea.input {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* ---- Shiny Button Styles ---- */
+.btn-shiny1 {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px 0;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    background-image: linear-gradient(
+        to right,
+        #eb3941,
+        #f15e64,
+        #e14e53,
+        #e2373f
+    );
+    transition: all .4s ease-in-out;
+}
+
+.btn-shiny1:hover {
+    background-position: 100% 0;
+}
+
+.btn-shiny1:focus {
+    outline: none;
+}
+
+/* ---- Footer ---- */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+/* ---- Responsive Design ---- */
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+    }
+
+    .btn-shiny1 {
+        width: 100%;
+    }
+}
+
+/* ---- Stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats, .count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}

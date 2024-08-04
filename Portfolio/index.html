@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Ashish Trivedi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"> <!-- Remixicon CSS -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="particles-js"></div>
+    <div class="content">
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Dev Ashish Trivedi</h1>
+                <p>Software Engineering Intern</p>
+                <div class="social-icons">
+                    <i class="ri-linkedin-box-fill" onclick="window.open('https://www.linkedin.com/in/dev-ashish-trivedi-a4339b274', '_blank')"></i>
+                    <i class="ri-github-fill" onclick="window.open('https://github.com/dEVT20034', '_blank')"></i>
+                </div>
+                <a href="#projects"><button class="btn-shiny1">See My Work</button></a>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Dev Ashish Trivedi, a passionate software engineering intern with a love for creating elegant and efficient code. As such, I am an ambitious student set to graduate in two years. Therefore, I constantly look for learning opportunities. I feel that knowledge should above all else be within reach and for this reason; hence, I am very curious and do anything at all to acquire it. Besides that from time to time my own efforts are directed towards desired outcomes. My actions reflect my desire to enhance personal abilities while making a lasting positive change on other people’s lives as well as offering them assistance whenever possible.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>SmartTask Organizer</h3>
+                <p>An innovative To-Do List app with secure user login features is being developed. A dynamic interface allows users to register, log in, and manage tasks. Through this application you can create and edit tasks or delete them if necessary. Furthermore, it categorizes the task depending on the status, due date or priority in relation to time. The principle of security was applied by encrypting the data before storing it and having a good way of managing sessions. Using modern technologies, the application has a responsive design that provides real-time notifications such as reminders and deadlines alerts. This project reveals my excellence in web development as well as user authentication and safe data handling; thus it is an easy-to-use solution for managing jobs efficiently at work places.</p>
+            </div>
+            <div class="project">
+                <h3>Cancer prediction ML Model</h3>
+                <p>A cancer prediction model was created by me via my machine learning project built on Python having 93% accuracy rate. The entire process involved comprehensive data preprocessing, intensive training of the model and thorough evaluation to guarantee its reliability. With this endeavor, I was able to demonstrate both my knowledge of the programming language as well as my understanding of various machine learning techniques.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/mkgwryzn" method="POST">
+                <div class="form">
+                    <input class="input" placeholder="Your Name" id="name" name="name" required="" type="text">
+                    <span class="input-border"></span>
+                </div>
+                <div class="form">
+                    <input class="input" placeholder="Your Email" id="email" name="email" required="" type="email">
+                    <span class="input-border"></span>
+                </div>
+                <div class="form">
+                    <textarea class="input" placeholder="Your Message" id="message" name="message" required=""></textarea>
+                    <span class="input-border"></span>
+                </div>
+                <button type="submit" class="btn-shiny1">Send</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Dev Ashish Trivedi. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
